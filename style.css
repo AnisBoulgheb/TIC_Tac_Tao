@@ -1,0 +1,250 @@
+
+body {
+    
+            display: flex;
+    align-items: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures video covers the full screen */
+            z-index: -1; /* Sends video behind content */
+        }
+.game{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 25px;
+
+}
+.grid-continer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    gap: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.game #rest{
+    width: 120px;
+    height: 50px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    font-size: large;
+}
+.game .win{
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding:16px;
+    font-weight: 800;
+    font-size: xx-large;
+}
+.continer{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 24px;
+}
+.continer img{
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+.continer .circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-weight: 800;
+    font-size: 72px;
+    color: white;
+}
+.continer .circle #o_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+.continer .x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    font-weight: 800;
+    font-size: 72px;
+    color: white;
+}
+.continer .x #x_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+@media (max-width: 930px) {
+    .continer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 24px;
+}
+.game{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 25px;
+}
+.continer img{
+    height: 150px;
+    width: 150px;
+    color: white;
+}
+.continer .circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-weight: 800;
+    font-size: 56px;
+    color: white;
+}
+.continer .circle #o_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+.continer .x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    font-weight: 800;
+    font-size: 56px;
+    color: white;
+}
+.continer .x #x_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+}
+@media (max-width: 730px) {
+    .continer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 24px;
+}
+.game{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 25px;
+    order: 1;
+}
+.continer img{
+    height: 85px;
+    width: 85px;
+    color: white;
+}
+.continer .circle{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-weight: 800;
+    font-size: 32px;
+    color: white;
+    position: relative;
+    left: 100px;
+}
+.continer .circle #o_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+.continer .x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    font-weight: 800;
+    font-size: 32px;
+    color: white;
+    order: 3;
+    position: relative;
+    top: -195px;
+    right: 100px;
+}
+
+.continer .x #x_result {
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+}
